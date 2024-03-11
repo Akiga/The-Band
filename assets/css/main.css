@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+}
+
+.grid{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.header{
+    height: 47px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* Nav */
+.nav__list{
+    display: flex;
+    line-height: 47px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav__item{
+    position: relative;
+}
+
+.nav__item:hover > a{
+    background-color: #ccc;
+    color: #000;
+}
+
+.nav__item-link{
+    font-size: 15px;
+    padding: 15px 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* More nav */
+.more__list{
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    left: 0;
+    width: 150px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.nav__item:hover .more__list{
+    display: block;
+}
+
+.more__item:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.more__item-link{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 16px;
+}
+
+/* Search */
+.search{
+    color: #fff;
+    padding: 15px 24px;
+    cursor: pointer;
+}
+
+.search:hover{
+    background-color: red;
+}
+
+
+/* Slider */
+.slider{
+    margin-top: 47px;
+    position: relative;
+}
+
+.slider__img{
+    width: 100%;
+}
+
+.slider__body{
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider__body-heading{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.slider__body-desc{
+    font-size: 15px;
+}
+
+/* Band */
+.band{
+    padding: 64px 16px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.desc{
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic;
+    color: #878787;
+}
+
+.band__body{
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.band__member-list{
+    display: flex;
+    padding: 32px 0;
+}
+
+.band__member-item{
+    width: calc(100% /3);
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.band__member-name{
+    margin: 10px 0;
+}
+
+.band__member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* tour */
+.tour{
+    background-color: #000;
+    padding: 64px 16px;
+}
+
+.tour .grid .heading{
+    color: #fff;
+}
+
+.tour__month{
+    margin-top: 40px;
+    color: #878787;
+}
+
+.tour__month-body{
+    background-color: #fff;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sold{
+    margin-left: 12px;
+    background-color: red;
+    padding: 0 8px;
+    color: #fff;
+}
+
+.tour__month-body__remaining{
+    background-color: #fff;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.quantity{
+    background-color: #000;
+    border-radius: 50%;
+    padding: 0 8px;
+    color: #fff;
+}
+
+/* Ticket */
+.ticket{
+    display: flex;
+    margin: 32px -8px 32px;
+}
+
+.ticket__item{
+    width: 33.333%;
+    padding: 0 8px;
+}
+
+.ticket__img{
+    width: 100%;
+}
+
+.ticket__img:hover{
+    opacity: 0.7;
+}
+
+.ticket__body{
+    background-color: #fff;
+    margin-top: -6px;
+    padding: 8px 16px;
+}
+
+.ticket__heading{
+    margin-top: 20px;
+}
+
+.ticket__date{
+    margin-top: 26px;
+    color: #878787;
+    font-size: 15px;
+}
+
+.ticket__desc{
+    margin-top: 26px;
+    font-size: 15px;
+}
+
+.buy__ticket{
+    margin: 20px 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+}
+
+.buy__ticket:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* Contact */
+.contact{
+    padding: 64px 16px;
+}
+
+.grid__contact{
+    margin-top: 40px;
+    display: flex;
+}
+
+.infor{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infor__icon{
+    font-size: 18px;
+}
+
+.w__icon{
+    display: inline-block;
+    width: 24px;
+}
+
+.send-infor{
+    width: 50%;
+}
+
+.w__half{
+    display: flex;
+    margin: 0 -8px;
+}
+
+.infor__input{
+    width: 50%;
+    padding: 12px;
+    margin: 0 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}
+
+.infor__input-all{
+    margin-top: 8px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.infor__btn{
+    margin-top: 16px;
+    padding: 12px 18px;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.infor__btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.map{
+    margin-top: 50px;
+}
+
+.map__img{
+    width: 100%;
+}
+
+
+/* Footer */
+.footer{
+    padding: 64px 16px;
+}
+.socials{
+    font-size: 20px;
+    text-align: center;
+    color: #878787;
+}
+
+.pb{
+    padding: 4px;
+}
+
+.pb:hover{
+    opacity: 0.6;
+}
+
+.source{
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.source-link{
+    color: #878787;
+}
