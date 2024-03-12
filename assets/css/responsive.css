@@ -1,0 +1,100 @@
+@media (max-width:718px){
+    .nav__list, .search{
+        display: none;
+    }
+
+
+    .mobile{
+        width: 100%;
+        height: 47px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .mobile__menu{
+        height: 47px;
+        color: #fff;
+        padding: 15px 24px;
+        display: block;
+    }
+
+    .nav__mobile-close{
+        height: 47px;
+        color: #fff;
+        padding: 15px 24px;
+        display: block;
+    }
+
+    .nav-mobile__list{
+        top: 100%;
+        width: 100%;
+        list-style: none;
+        position: absolute;
+        left: 0;
+        background-color: #000;
+        display: none;
+    }
+
+    /* show menu */
+    .nav__mobile:checked ~ .nav-mobile__list{
+        display: block;
+    }
+
+    .nav__item-link{
+        display: block;
+        padding: 12px;
+    }
+
+
+    .slider__body{
+        display: none;
+    }
+
+    .band__member-item{
+        width: 100%;
+    }
+
+    .ticket__item{
+        width: 100%;
+        padding: 12px 24px;
+    }
+
+    .grid__contact{
+        display: block;
+        padding: 0 12px;
+    }
+
+    .infor{
+        width: 100%;
+    }
+
+    .send-infor{
+        width: 100%;
+        margin-top: 12px;
+    }
+    
+    .w__half {
+        display: block;
+        padding: 8px;
+    }
+    
+    .infor__input{
+        width: 100%;
+        margin: 8px 0;
+    }
+    .infor__input-all{
+        margin: 0;
+        font-size: 15px;
+    }
+    .infor__btn{
+        width: 100%;
+    }
+}
+
+@media (min-width:719px){
+    .mobile{
+        display: none;
+    }
+
+}

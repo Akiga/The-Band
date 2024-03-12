@@ -149,6 +149,7 @@ html{
 .band__member-list{
     display: flex;
     padding: 32px 0;
+    flex-wrap: wrap;
 }
 
 .band__member-item{
@@ -222,6 +223,7 @@ html{
 .ticket{
     display: flex;
     margin: 32px -8px 32px;
+    flex-wrap: wrap;
 }
 
 .ticket__item{
@@ -371,4 +373,8 @@ html{
 
 .source-link{
     color: #878787;
+}
+
+.nav__mobile{
+    display: none;
 }
